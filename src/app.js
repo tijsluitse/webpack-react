@@ -1,12 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ContactsList from './contactsList';
 
-class World extends React.Component {
-	render() {
+let contacts = [
+	{
+		id: 1,
+		name: "Scott",
+		phone: "555 555 5555"
+	},
+	{
+		id: 2,
+		name: "Lola",
+		phone: "444 444 4444"
+	},
+	{
+		id: 3,
+		name: "Tim",
+		phone: "333 333 3333"
+	}
+];
+
+class App extends React.Component {
+	render()
+	{
 		return (
-			<h1>World</h1>
+			<div>
+				<h1>Contacts List</h1>
+				<ContactsList contacts={this.props.contacts}/>
+			</div>
 		)
 	}
 }
 
-ReactDOM.render(<World />, document.getElementById('app'));
+ReactDOM.render( <App contacts={contacts}/>, document.getElementById( 'app' ) );
