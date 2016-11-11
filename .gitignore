@@ -1,1 +1,4 @@
+*/.idea
+.idea
+.tscache
 node_modules
