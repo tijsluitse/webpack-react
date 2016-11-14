@@ -1,45 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Draggable from 'draggable';
-
-// // Using State
-// var Checkbox = React.createClass({
-//
-// 	getInitialState() {
-// 		return {
-// 			checked: false
-// 		}
-// 	},
-//
-// 	handleCheck() {
-// 		this.setState({
-// 			checked: !this.state.checked
-// 		})
-// 	},
-//
-// 	render() {
-// 		var message;
-//
-// 		if(this.state.checked) {
-// 			message = "checked";
-// 		} else {
-// 			message = "unchecked";
-// 		}
-//
-// 		return (
-// 			<div>
-// 				<input type="checkbox"
-// 				       onChange={this.handleCheck}
-// 				       defaultChecked={this.state.checked}
-// 				/>
-// 				<p>This box is {message}</p>
-// 			</div>
-// 		)
-// 	}
-//
-// });
-//
-// ReactDOM.render(<Checkbox/>, document.getElementById('app'));
+import Draggable from 'react-draggable';
 
 var Note = React.createClass({
 

@@ -20,6 +20,7 @@
 	"dependencies": {
 		"react": "^15.3.2",
 		"react-dom": "^15.3.2",
+		"react-draggable": "^2.2.0",
 		"ejs": "^2.3.4"
 	},
 	"devDependencies": {
@@ -35,5 +36,8 @@
 		"eslint-plugin-react": "^5.1.1",
 		"webpack": "^1.12.*",
 		"webpack-dev-server": "^1.14.*"
+	},
+	"eslintConfig": {
+		"extends": "./node_modules/react-scripts/config/eslint.js"
 	}
 }
